@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,18 +8,143 @@
     android:layout_height="match_parent"
     tools:context=".MainMenu">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="273dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="330dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginBottom="257dp"
-        android:text="Hallo!"
-        android:textSize="96sp"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9A00FD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=""
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/topbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#6D1E1E"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#FDFDFD"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#FDFDFD"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#FDFDFD"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#FDFDFD"
+                app:icon="@android:drawable/btn_star_big_on" />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="Palabra: Enti \nLetras: 4"
+                android:textColorLink="#FDFDFD"
+                app:icon="@android:drawable/btn_star_big_on" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
