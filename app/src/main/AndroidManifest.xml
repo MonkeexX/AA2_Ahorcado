@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".ProveActivity"
+            android:name=".SettingsMenu"
             android:exported="false" />
         <activity
             android:name=".ui.levels.LevelSelectorActivity"
