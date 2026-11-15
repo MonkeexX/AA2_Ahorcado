@@ -1,12 +1,14 @@
 package com.example.myapplication
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.example.myapplication.ui.levels.LevelSelectorActivity
+import androidx.core.os.LocaleListCompat
+
+private const val LANG_SPANISH: String = "es"
+private const val LANG_ENGLISH: String = "en"
 
 class SettingsMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,18 +16,15 @@ class SettingsMenu : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_settings_menu)
 
-        val button = findViewById<Button>(R.id.button)
+        val buttonColorScheme = findViewById<Button>(R.id.button)
         val backButton = findViewById<Button>(R.id.buttonToolbar)
-
-        fun startActivity(intent: Any) {}
+        val buttonLanguage = findViewById<Button>(R.id.buttonLanguage);
 
         backButton.setOnClickListener {
-            startActivity(
-                finish()
-            )
+           finish();
         }
 
-        button.setOnClickListener{
+        buttonColorScheme.setOnClickListener{
 
             val currentMode = AppCompatDelegate.getDefaultNightMode()
 
@@ -40,6 +39,12 @@ class SettingsMenu : AppCompatActivity() {
                 )
             }
 
+        }
+
+        buttonLanguage.setOnClickListener {
+            val isSpanish = resources.configuration.locales[0].language == LANG_SPANISH;
+            val newLanguage = if (isSpanish) LANG_ENGLISH else LANG_SPANISH;
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(newLanguage));
         }
     }
 

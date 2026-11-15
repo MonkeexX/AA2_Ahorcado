@@ -18,7 +18,7 @@ class LevelSelectorActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_level_selector)
 
-        val button = findViewById<Button>(R.id.buttonToolbar)
+        val buttonSettings = findViewById<Button>(R.id.buttonToolbar)
 
         val recyclerLevels = findViewById<RecyclerView>(R.id.recyclerLevels)
         recyclerLevels.layoutManager = LinearLayoutManager(this)
@@ -44,7 +44,7 @@ class LevelSelectorActivity : AppCompatActivity() {
 //            startActivity(intent);
         }
 
-        button.setOnClickListener {
+        buttonSettings.setOnClickListener {
             startActivity(
                 Intent(this, SettingsMenu::class.java)
             )

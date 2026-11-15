@@ -30,13 +30,19 @@
                     android:id="@+id/textWord"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:fontFamily="@font/monogram"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="28sp" />
 
                 <TextView
                     android:id="@+id/textLetters"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:fontFamily="@font/monogram"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="28sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -58,7 +64,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:fontFamily="@font/monogram"
+                    android:text="TextView"
+                    android:textSize="28sp" />
 
             </LinearLayout>
 

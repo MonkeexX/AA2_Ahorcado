@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.base.Level
+import com.example.myapplication.base.ScoreData
 
 //Le paso una variable que recibe un level y retorna un void (Unit)
 class LevelAdapter(private val levels: List<Level>, private val onLevelClick: (Level) -> Unit) : RecyclerView.Adapter<LevelAdapter.LevelViewHolder>()
@@ -33,10 +34,10 @@ class LevelAdapter(private val levels: List<Level>, private val onLevelClick: (L
     override fun onBindViewHolder(holder: LevelViewHolder, position: Int)
     {
         val level = levels[position]
-        holder.textWord.text = holder.itemView.context.getString(R.string.word_label, level.number, level.word)
-        holder.textLetters.text = holder.itemView.context.getString(R.string.letters_label, level.word.length)
-        holder.imageDifficulty.setImageResource(level.difficulty.drawable)
-        holder.textScore.text = level.bestScore.toString()
+        holder.textWord.text = holder.itemView.context.getString(R.string.word_label, level.number, level.word);
+        holder.textLetters.text = holder.itemView.context.getString(R.string.letters_label, level.word.length);
+        holder.imageDifficulty.setImageResource(level.difficulty.drawable);
+        holder.textScore.text = ScoreData.getBestScore(level.number).toString();
 
         holder.itemView.setOnClickListener { onLevelClick(level) }
     }
