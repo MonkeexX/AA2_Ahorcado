@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
+    <string name="Level_Difficulty">Dificultad del nivel</string>
+    <string name="TextDebug">Texto para debugar</string>
+    <string name="LettersLevel">Letras</string>
     <string name="Artist">Tangamandapio</string>
 </resources>

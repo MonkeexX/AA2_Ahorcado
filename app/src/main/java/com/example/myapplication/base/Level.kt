@@ -3,11 +3,16 @@ package com.example.myapplication.base
 import androidx.annotation.DrawableRes
 import com.example.myapplication.R
 
+const val MIN_EASY: Int = 1;
+const val MAX_EASY: Int = 4;
+const val MIN_MEDIUM: Int = 5;
+const val MAX_MEDIUM: Int = 7;
+
 enum class Difficulty(@DrawableRes val drawable: Int)
 {
-    EASY(drawable = R.drawable.im_difficulty_easy),
-    MEDIUM(drawable = R.drawable.im_difficulty_medium),
-    HARD(drawable = R.drawable.im_difficulty_hard);
+    EASY(drawable = R.drawable.img_difficulty_easy),
+    MEDIUM(drawable = R.drawable.img_difficulty_medium),
+    HARD(drawable = R.drawable.img_difficulty_hard);
 }
 
 data class Level(val number : Int, val word: String)
@@ -20,8 +25,8 @@ data class Level(val number : Int, val word: String)
     val difficulty: Difficulty
     get() = when(word.length)
     {
-        in 1..4 -> Difficulty.EASY;
-        in 5..7 -> Difficulty.MEDIUM;
+        in MIN_EASY..MAX_EASY -> Difficulty.EASY;
+        in MIN_MEDIUM..MAX_MEDIUM -> Difficulty.MEDIUM;
         else -> Difficulty.HARD;
     }
 }

@@ -12,7 +12,7 @@ class LevelSelectorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main_menu)
+        setContentView(R.layout.activity_level_selector)
 
         val button = findViewById<Button>(R.id.buttonToolbar)
 
