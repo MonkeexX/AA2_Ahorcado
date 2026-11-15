@@ -23,11 +23,8 @@ class SettingsMenu : AppCompatActivity() {
         backButton.setOnClickListener {
            finish();
         }
-
         buttonColorScheme.setOnClickListener{
-
             val currentMode = AppCompatDelegate.getDefaultNightMode()
-
 
             if (currentMode == AppCompatDelegate.MODE_NIGHT_YES) {
                 AppCompatDelegate.setDefaultNightMode(
@@ -40,13 +37,10 @@ class SettingsMenu : AppCompatActivity() {
             }
 
         }
-
         buttonLanguage.setOnClickListener {
             val isSpanish = resources.configuration.locales[0].language == LANG_SPANISH;
             val newLanguage = if (isSpanish) LANG_ENGLISH else LANG_SPANISH;
             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(newLanguage));
         }
     }
-
-
 }

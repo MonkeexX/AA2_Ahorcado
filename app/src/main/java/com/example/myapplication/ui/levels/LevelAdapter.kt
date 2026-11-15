@@ -29,7 +29,6 @@ class LevelAdapter(private val levels: List<Level>, private val onLevelClick: (L
         val rowView = LayoutInflater.from(parent.context).inflate(R.layout.item_level, parent, false)
         return LevelViewHolder(rowView)
     }
-
     //Metodo que se llama para poner los datos dentro del ViewHolder
     override fun onBindViewHolder(holder: LevelViewHolder, position: Int)
     {
@@ -38,9 +37,7 @@ class LevelAdapter(private val levels: List<Level>, private val onLevelClick: (L
         holder.textLetters.text = holder.itemView.context.getString(R.string.letters_label, level.word.length);
         holder.imageDifficulty.setImageResource(level.difficulty.drawable);
         holder.textScore.text = ScoreData.getBestScore(level.number).toString();
-
         holder.itemView.setOnClickListener { onLevelClick(level) }
     }
-
     override fun getItemCount() = levels.size
 }

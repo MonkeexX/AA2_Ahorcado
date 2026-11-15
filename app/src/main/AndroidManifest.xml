@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".ui.levels.RankingActivity"
+            android:name=".ui.game.RankingActivity"
             android:exported="false" />
         <activity
             android:name=".SettingsMenu"
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Gameplay"
+            android:name=".ui.game.GameplayActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

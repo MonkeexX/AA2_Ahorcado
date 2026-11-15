@@ -5,23 +5,20 @@ private const val DEFAULT_SCORE: Int = 0;
 
 object ScoreData
 {
-    private val scores: MutableMap<Int, Int> = mutableMapOf()
-
+    private val bestScoresByLevel: MutableMap<Int, Int> = mutableMapOf()
+    private val scores: MutableList<Int> = mutableListOf()
     fun addScore(levelNumber: Int, score: Int)
     {
+        scores.add(score)
         if(score > getBestScore(levelNumber))
-        {
-            scores[levelNumber] = score;
-        }
+            bestScoresByLevel[levelNumber] = score;
     }
-
     fun getBestScore(levelNumber: Int): Int
     {
-        return scores[levelNumber] ?: DEFAULT_SCORE;
+        return bestScoresByLevel[levelNumber] ?: DEFAULT_SCORE;
     }
-
     fun getTopScores(): List<Int>
     {
-        return scores.values.sortedDescending().take(RANKING_SIZE)
+        return scores.sortedDescending().take(RANKING_SIZE)
     }
 }
