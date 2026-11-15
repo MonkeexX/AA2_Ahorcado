@@ -4,6 +4,17 @@
     <string name="level_difficulty">Level Difficulty</string>
     <string name="word_label">Level %1$d - Word: %2$s</string>
     <string name="letters_label">Letters: %1$d</string>
+    <string name="ranking_title">Ranking</string>
+    <string name="ranking_entry">#%1$d: %2$s</string>
+    <string name="ranking_empty">-</string>
+    <string name="settings_change_language">Change language</string>
+    <string name="ranking_back_to_levels">Level select</string>
+    <string name="splash_title">Hangman</string>
+    <string name="splash_tap_to_continue">Tap to continue</string>
+    <string name="toolbar_options">Options</string>
+    <string name="settings_back">Back</string>
+    <string name="settings_change_color_scheme">Change color scheme</string>
+    <string name="action_settings">Settings</string>
 
     <string name="word_1">Sun</string>
     <string name="word_2">Cat</string>

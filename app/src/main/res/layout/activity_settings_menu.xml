@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/monogram"
-            android:text="Volver"
+            android:text="@string/settings_back"
             android:textSize="32dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="29dp" />
@@ -34,8 +34,21 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Change color scheme"
+        android:fontFamily="@font/monogram"
+        android:text="@string/settings_change_color_scheme"
+        android:textSize="28sp"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/buttonLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/monogram"
+        android:text="@string/settings_change_language"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

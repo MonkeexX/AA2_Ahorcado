@@ -3,11 +3,10 @@ package com.example.myapplication.base
 import androidx.annotation.DrawableRes
 import com.example.myapplication.R
 
-const val MIN_EASY: Int = 1;
-const val MAX_EASY: Int = 4;
-const val MIN_MEDIUM: Int = 5;
-const val MAX_MEDIUM: Int = 7;
-const val DEFAULT_SCORE: Int = 0;
+private const val MIN_EASY: Int = 1;
+private const val MAX_EASY: Int = 4;
+private const val MIN_MEDIUM: Int = 5;
+private const val MAX_MEDIUM: Int = 7;
 
 enum class Difficulty(@DrawableRes val drawable: Int)
 {
@@ -22,7 +21,7 @@ data class Level(val number : Int, val word: String)
     {
         require(word.isNotBlank());
     }
-    private val scores: MutableList<Int> = mutableListOf();
+
     val difficulty: Difficulty
     get() = when(word.length)
     {
@@ -30,12 +29,4 @@ data class Level(val number : Int, val word: String)
         in MIN_MEDIUM..MAX_MEDIUM -> Difficulty.MEDIUM;
         else -> Difficulty.HARD;
     }
-
-    fun addScore(score:Int)
-    {
-        scores.add(score);
-    }
-
-    val bestScore: Int
-        get() = scores.maxOrNull() ?: DEFAULT_SCORE;
 }

@@ -4,7 +4,17 @@
     <string name="level_difficulty">Dificultad del nivel</string>
     <string name="word_label">Nivel %1$d - Palabra: %2$s</string>
     <string name="letters_label">Letras: %1$d</string>
-
+    <string name="ranking_title">Clasificación</string>
+    <string name="ranking_entry">#%1$d: %2$s</string>
+    <string name="ranking_empty">-</string>
+    <string name="settings_change_language">Cambiar idioma</string>
+    <string name="ranking_back_to_levels">Selector de niveles</string>
+    <string name="splash_title">Ahorcado</string>
+    <string name="splash_tap_to_continue">Haz tap para continuar</string>
+    <string name="toolbar_options">Opciones</string>
+    <string name="settings_back">Volver</string>
+    <string name="settings_change_color_scheme">Cambiar esquema de color</string>
+    <string name="action_settings">Ajustes</string>
 
     <string name="word_1">Sol</string>
     <string name="word_2">Gato</string>
@@ -12,7 +22,7 @@
     <string name="word_4">Jardin</string>
     <string name="word_5">Planeta</string>
     <string name="word_6">Ventana</string>
-    <string name="word_7">Artist</string>
+    <string name="word_7">Artista</string>
     <string name="word_8">namespace</string>
     <string name="word_9">Ordenador</string>
     <string name="word_10">Programacion</string>

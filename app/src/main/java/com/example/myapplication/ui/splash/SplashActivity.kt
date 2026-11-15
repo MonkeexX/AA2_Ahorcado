@@ -15,9 +15,9 @@ class SplashActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val pantalla = findViewById<ConstraintLayout>(R.id.main)
+        val layoutMain = findViewById<ConstraintLayout>(R.id.main)
 
-        pantalla.setOnClickListener {
+        layoutMain.setOnClickListener {
             startActivity(
                 Intent(this, LevelSelectorActivity::class.java)
             )
