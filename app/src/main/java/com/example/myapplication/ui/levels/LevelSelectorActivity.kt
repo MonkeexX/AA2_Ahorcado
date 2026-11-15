@@ -9,6 +9,7 @@ import com.example.myapplication.SettingsMenu
 import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.Gameplay
 import com.example.myapplication.base.Level
 
 class LevelSelectorActivity : AppCompatActivity() {
@@ -39,9 +40,9 @@ class LevelSelectorActivity : AppCompatActivity() {
         )
         //Lambda para cuando el botón se haya pulsado
         recyclerLevels.adapter = LevelAdapter(createLevels()) { level ->
-//            val intent = Intent(this,);
-//            intent.putExtra(, level.word);
-//            startActivity(intent);
+            val intent = Intent(this, Gameplay::class.java);
+            intent.putExtra("WORD", level.word);
+            startActivity(intent);
         }
 
         button.setOnClickListener {
