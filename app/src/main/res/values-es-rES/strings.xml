@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
-    <string name="Level_Difficulty">Dificultad del nivel</string>
-    <string name="TextDebug">Texto para debugar</string>
-    <string name="LettersLevel">Letras</string>
-    <string name="Artist">Tangamandapio</string>
+    <string name="level_difficulty">Dificultad del nivel</string>
+    <string name="word_label">Nivel %1$d - Palabra: %2$s</string>
+    <string name="letters_label">Letras: %1$d</string>
+
+
+    <string name="word_1">Sol</string>
+    <string name="word_2">Gato</string>
+    <string name="word_3">Ultron</string>
+    <string name="word_4">Jardin</string>
+    <string name="word_5">Planeta</string>
+    <string name="word_6">Ventana</string>
+    <string name="word_7">Artist</string>
+    <string name="word_8">namespace</string>
+    <string name="word_9">Ordenador</string>
+    <string name="word_10">Programacion</string>
+    <string name="word_11">Refrigerador</string>
+    <string name="word_12">Tangamandapio</string>
 </resources>
