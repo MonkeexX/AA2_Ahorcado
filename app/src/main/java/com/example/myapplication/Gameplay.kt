@@ -20,20 +20,28 @@ class Gameplay : AppCompatActivity() {
         }
 
         val letters = arrayOf(
-            "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P",
-            "A", "S", "D", "F", "G", "H", "J", "K", "L",
-            "Z", "X", "C", "V", "B", "N", "M"
+            'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
+            'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L',
+            'Z', 'X', 'C', 'V', 'B', 'N', 'M'
         )
 
-        var clickedButton = mutableSetOf<String>()
+        // Variable para guardar la palabra secreta
+        val secretWord = ""
+        val clickedButton = mutableSetOf<String>()
         val keyboard = findViewById<GridLayout>(R.id.keyboard)
 
         for (letter in letters){
             val button = Button(this)
-            button.text = letter
+            button.text = letter.toString()
 
             button.setOnClickListener {
-                clickedButton.add(letter)
+                clickedButton.add(letter.toString())
+                for(secretLetter in secretWord) {
+                    //if (letter == secretLetter)
+
+                    //else
+
+                }
 
                 button.isEnabled = false
             }
