@@ -1,4 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
-    <string name="Artist">Artist</string>
+    <string name="level_difficulty">Level Difficulty</string>
+    <string name="word_label">Level %1$d - Word: %2$s</string>
+    <string name="letters_label">Letters: %1$d</string>
+
+    <string name="word_1">Sun</string>
+    <string name="word_2">Cat</string>
+    <string name="word_3">Ultron</string>
+    <string name="word_4">Garden</string>
+    <string name="word_5">Planet</string>
+    <string name="word_6">Window</string>
+    <string name="word_7">Artist</string>
+    <string name="word_8">namespace</string>
+    <string name="word_9">Computer</string>
+    <string name="word_10">Programming</string>
+    <string name="word_11">Refrigerator</string>
+    <string name="word_12">Tangamandapio</string>
 </resources>
